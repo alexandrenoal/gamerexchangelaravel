@@ -1,0 +1,317 @@
+/* General */
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #CCC; /* linha abaixo do menu*/
+}
+
+.row{
+    margin: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #F2A340;
+    border: 2px solid #C28000;
+}
+
+.btn-primary:hover {
+    background-color: #C28000;
+    border-color: #C28000;
+}
+
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #C3E6Cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* navbar */
+
+.navbar img {
+    width: 200px;
+}
+
+#navbar {
+    justify-content: space-between; /* coloca o menu para direita*/
+    background-color: #fff;    
+    padding: 5px 0; 
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {    
+    color: #F2A340;
+}
+
+/* search container */
+#search-container {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%
+    margin: 0 auto;
+}
+
+/* Events list */
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#events-container .card {
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: .5%;
+}
+
+#events-container img {
+    max-height: 180px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #CCC;
+}
+
+.card .card-title{
+    color: #212121;
+    font-size: 20px;
+    font_weight: bold;
+    margin-bottom: 13px;
+}
+
+.card-participants {
+    font-size: 14px;
+    color: #757575;
+}
+
+/* Event create page */
+
+#event-create-cotainer {
+    padding: 30px;
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea  {
+    font-size: 12px;
+}
+
+/* event page */
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container {
+    border-radius: 10px;
+    width: 500px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+/* dashboard */
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 15%;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
+}
+
+/* convidados */
+.convidados-container form {
+    display: inline-block;
+}
+
+.convidados-container th {
+    width: 15%;
+}
+
+/* Edit page*/
+
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* footer */
+
+#description-container {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #353E48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/*alexandre*/
+h2 {
+    margin-top: 20px;
+}
+
+/*games container*/
+
+.image-game{
+    float: left; 
+    margin-right: 15px; 
+    width: 200px;    
+    height: 400px;
+}
+
+.img-game{
+    float: left; 
+    margin-right: 5px; 
+    width: 200px !important;    
+    height: 350px;     
+}
+
+.image {
+    float: left;   /* deixa os elementos um ao lado da outro */
+    width: 203px;  /* largura do elemento */
+    height: 270px; /* altura do elemento */
+    padding: 0px;  /* espaçamento entre os elementos */
+    margin-left: 15px; /* move os elementos para a direita */
+    margin-top: 14px; /* move os elementos para a baixo, inclusive ajuda a afastar os elementos trazidos pela consulta */
+}
+
+.imageconsole {
+    float: left;
+    margin-top: 20px;
+    width: 424px;
+    height: 240px; 
+    padding: 1px;      
+    margin-left: 13px; 
+}
+
+.imagepostgame {
+    width: 500px;
+    height: 600px; 
+    padding: auto;    
+    margin-left: -30px;    
+}
+
+.imagepostconsole {
+    width: 600px;
+    height: 340px; 
+    padding: auto;    
+    margin-left: -75px;    
+}
+
+.meusgames {
+    width: 30px;
+    height: 40px; 
+    padding: auto;    
+}
+
+.meusconsoles {
+    width: 50px;
+    height: 35px; 
+    padding: auto;    
+}  
+
+.h3consoles {
+    margin-top: 10px;
+}
+
+/*home*/
+
+#home{
+   float: left;             
+}
+
+  
+
