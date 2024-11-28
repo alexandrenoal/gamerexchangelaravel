@@ -49,4 +49,8 @@ class User extends Authenticatable
     public function consoles() { 
         return $this->hasMany('App\Models\Console');
     }
+
+    public function mensagem() { 
+        return $this->hasMany('App\Models\Mensagens');
+    }
 }

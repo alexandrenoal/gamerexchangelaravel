@@ -7,10 +7,42 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Game;
 use App\Models\Console;
+use App\Models\Mensagens;
 use App\Models\User;
 
 class GameController extends Controller
 {
+
+    public function mensagem(){ 
+       
+        $mensagens = Mensagens::all(); 
+        
+        return view('mensagem',['mensagens' => $mensagens]); 
+    }
+
+    public function cadastromensagem(Request $request) { 
+
+        $msg = new Mensagens;
+
+        $msg->mensagem = $request->mensagem;        
+        $msg->username = $request->username;        
+        
+        $mensageiro = auth()->user();
+        $msg->mensageiro = $mensageiro->id;          
+              
+        $msg->save();        
+
+        return redirect('/mensagem/{{ $username }}');
+
+    }   
+
+    public function explorar(){ 
+       
+        $games = Game::all(); 
+        $consoles = Console::all();
+
+        return view('explorar',['games' => $games, 'consoles' => $consoles]); 
+    }
 
     public function games(){ 
        
@@ -39,7 +71,6 @@ class GameController extends Controller
         $user = auth()->user();
         $game->user_id = $user->id;
         
-
         if($request->hasFile('image') && $request->file('image')->isValid()) {
 
             $requestImage = $request->image;
@@ -181,5 +212,16 @@ class GameController extends Controller
 
         return view('vitrine', compact('games', 'consoles'));
     }
+
+    public function show_mensagens(){ //funcionando -> Este show serve para mostrar apenas as mensagens do perfil logado, qdo manda msg para um amigo
+       
+        $userId = Auth::id();                    
+        
+        $mensagens = Mensagens::where('mensageiro', $userId)->get();      
+        
+        return view('mensagem',['mensagens' => $mensagens]); 
+    }   
+
+    
         
 }

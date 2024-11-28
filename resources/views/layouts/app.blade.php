@@ -67,7 +67,13 @@
                             <a class="nav-link" href="/vitrine">Vitrine</a>
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rede</a>
+                            <a class="nav-link" href="/explorar">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/amigos">Amigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mensagem">Mensagens</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/home">{{ Auth::user()->name }}</a>

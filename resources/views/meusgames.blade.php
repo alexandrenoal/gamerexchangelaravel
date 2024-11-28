@@ -27,8 +27,8 @@
                         @foreach($games as $game)            
                             <tr>
                                 
-                                <td><a href="/meusgames{{ $game->id }}"> {{ $game->nome }} </a></td>
-                                <td><a href="/meusgames{{ $game->id }}"> {{ $game->plataforma }} </a></td>
+                                <td><a class="nav-link" href="/meusgames{{ $game->id }}"> {{ $game->nome }} </a></td>
+                                <td><a class="nav-link" href="/meusgames{{ $game->id }}"> {{ $game->plataforma }} </a></td>
                                 <td><a href="/meusgames{{ $game->id }}"> <img src="/img/games/{{ $game->image }}" class="meusgames" ></td>
                                 <td>
                                     <a href="/editgames/{{ $game->id }}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a> 

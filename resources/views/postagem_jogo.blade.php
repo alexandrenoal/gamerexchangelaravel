@@ -15,9 +15,9 @@
 
                         @foreach($games as $a)    
                             <hr>    
-                            <p><a href="/vitrine/{{ $a->username }}"><b>Game:</b> {{ $a->nome }} - <b>Console:</b> {{ $a->plataforma }} - <b>Usuário:</b> {{ $a->username }} - <b>Data da publicação:</b> {{ $a->created_at }}</p>
-                                <div id="image-container" class="col-md-6"></a>
-                                <a href=""> <img src="/img/games/{{ $a->image }}" class="imagepostgame"></a>
+                            <p><a class="nav-link" href="/vitrine/{{ $a->username }}"><b>Game:</b> {{ $a->nome }} - <b>Console:</b> {{ $a->plataforma }} - <b>Usuário:</b> {{ $a->username }} - <b>Data da publicação:</b> {{ $a->created_at }}</p>
+                                <div id="image-container" class="col-md-6">
+                                <img src="/img/games/{{ $a->image }}" class="imagepostgame"></a>
                                 </div>            
                         @endforeach
                     </div>       

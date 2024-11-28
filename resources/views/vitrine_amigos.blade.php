@@ -13,7 +13,7 @@
 
                 <div class="col-md-10 offset-md-1 games-container">
                     <div class="game-container"><br>
-                    <h3>Games</h3> 
+                    <h3>Games</h3>                     
                     
                     @foreach($games as $a) 
                         {{ $games->nome }}

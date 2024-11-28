@@ -17,4 +17,11 @@ class UserController extends Controller
         return view('profile',['users' => $users]); 
     }
     
+    public function amigos(){ 
+       
+        $user = User::all(); 
+    
+        return view('amigos',['user' => $user]); 
+    }
+
 }

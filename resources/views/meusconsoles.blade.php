@@ -27,8 +27,8 @@
                         @foreach($consoles as $console)            
                             <tr>
                                 
-                                <td><a href="/meusconsoles{{ $console->id }}"> {{ $console->nome }} </a></td>
-                                <td><a href="/meusconsoles{{ $console->id }}"> {{ $console->plataforma }} </a></td>
+                                <td><a class="nav-link" href="/meusconsoles{{ $console->id }}"> {{ $console->nome }} </a></td>
+                                <td><a class="nav-link" href="/meusconsoles{{ $console->id }}"> {{ $console->plataforma }} </a></td>
                                 <td><a href="/meusconsoles{{ $console->id }}"> <img src="/img/consoles/{{ $console->image }}" class="meusconsoles"></td>
                                 <td>
                                     <a href="/editconsoles/{{ $console->id }}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a> 
